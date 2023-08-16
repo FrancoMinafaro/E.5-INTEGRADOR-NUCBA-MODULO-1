@@ -1,0 +1,556 @@
+*{
+    box-sizing: border-box ;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+h1{ font-size:  3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+ul{ list-style: none;}
+li{ font-size: 1.25em;}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+button{
+    font-size: 1em;
+    font-weight:  bold;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 2px solid #000;
+    box-shadow: 2px 2px 10px #000;
+    color: #fff;
+    background-color: #d63031;
+}
+
+button:hover{
+    background-color: #ff0000;
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+    padding: 10px 30px;
+}
+
+.color-acento{ color: #d63031;}
+
+header{
+    background-color: rgba(245, 245, 245);
+}
+
+.container img{
+    margin: 0;
+    padding: 0px 50px;
+    width: 205px;
+    height: 105px;
+}
+
+
+
+.cart{
+    display: none;
+}
+
+#cart-icon,
+#cart-toggle{
+    display: none;
+}
+
+
+header .container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: #d63031;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: #fff;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("assets/LOGO\ BARBUDOGS.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    color: #fff;
+}
+
+
+
+#somos-barbudogs .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#nuestros-servicios{
+    background-color: rgba(30,30,30);
+    color: white;
+    text-align: center;
+}
+
+#nuestros-servicios .container{
+    padding: 150px 12;
+
+}
+
+#nuestros-servicios h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#nuestros-servicios p{
+    display: none;
+}
+
+#nuestros-servicios .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0;
+    margin: 30px;
+    border-radius: 15px;
+
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("assets/Peluqueria-canina-clinicanimal-1200x900.jpg");
+    
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("assets/spa.jpg");
+
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("assets/retiros.jpg");
+    
+
+}
+
+#beneficios .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#beneficios li{
+    margin: 16px 0px;
+    font-weight: bold;
+}
+
+
+
+
+#contactenos{
+    background: rgb(49, 49, 49);
+    color: white;
+    padding: 0 1.5em ;
+}
+
+.container-con{
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+
+}
+
+.logo-contact{
+    text-align: center;
+    font-size: 3em;
+}
+
+.logo-contact span{
+    color: red;
+}
+
+.contact-wrapper{
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
+}
+
+.contact-wrapper > * {
+    padding: 1em;
+}
+
+.contact-form{
+    background: #222222;
+}
+
+.contact-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+}
+
+.contact-form form .block{
+    grid-column: 1/3;
+}
+
+
+.contact-form form p{
+    margin: 0;
+    padding: 1em;
+}
+
+
+
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea {
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: 0;
+    color: #fff;
+    border-bottom: 1px solid #d63031;
+}
+
+.contact-form form button{
+    background: #b70e21;
+    color: #000;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+}
+
+.contact-form form button:hover,
+.contact-form form button:focus{
+    background: #d63031;
+    color: #fff;
+    transition: background-color 1s ease-out;
+    outline: 0;
+}
+
+
+
+.contact-info{
+    background: #000;
+}
+
+.contact-info h4,
+.contact-info ul,
+.contact-info p{
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+.contact-info ul{
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info ul li{
+    padding: .3em; 
+}
+footer{
+    background-color: rgba(230,230,230);
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgb(100,100,100);
+}
+
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+/* LARGE SCREEN  720*/
+@media (min-width:720px) {
+
+    
+    
+    header{
+        position: fixed;
+        align-items: center;
+        width: 100%;
+        height: 12%; 
+        
+    }
+
+    header .container{ 
+        flex-direction: row;
+        justify-content: space-between;
+        display: flex;
+    }
+
+    #cart-icon{
+        display: flex;
+        height: 66px;
+        width: 95px;
+        padding: 12px 20px;
+        margin-bottom: 30px;
+    }
+
+    .cart{
+        position: absolute;
+        top: 65px;
+        right: 0;
+        background: linear-gradient(to top, rgb(184, 184, 184), rgb(248, 247, 247));
+        height: calc(100vh - 65px);
+        border-left: 1px solid white;
+        padding: 50px 30px;
+        flex-direction: column;
+        gap: 30px;
+        overflow-y: scroll;
+        z-index: 2;
+        display: none;
+    }
+
+    #cart-toggle:checked + .cart{
+        display: flex;
+    }
+    
+    #cart-toggle{
+        display: none;
+    } 
+
+    .cart::-webkit-scrollbar{
+        display: none;
+    }
+
+    .cart h2{
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        font-weight: 600px;
+    }
+
+    .cart-item{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #ffffff;
+        padding: 10px;
+        border: 4px solid green;
+        border-radius: 10px;
+    }
+
+    .cart-item h3{
+        color: rgb(0, 0, 0, 7, 7);
+        font-size: 10px;
+        font-weight: 200px;
+    }
+
+    .cart-item img{
+        height: 60px;
+    }
+
+    .item-info{
+        display: flex;
+        flex-direction: column;
+    }
+    .item-title{
+        color: #b70e21;
+        font-size: 10px;
+        font-weight: 600;
+    }
+
+    .item-bid{
+        color: #b70e21;
+        font-size: 12px;
+        font-weight: 300;
+    }
+    .item-price{
+        color: #000;
+        font-size: 20px;
+        font-weight: 1000;
+    }
+
+    .item-handler{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .quantity-handler{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2px 2px;
+        margin: 20px;
+        border-radius: 5px;
+        color: green;
+        font-weight: 400;
+        border: 1px solid green;
+    }
+
+    .item-quantity{
+        color: rgb(0, 0, 0);
+    }
+
+    .divider{
+        margin-top: 20px;
+        border: 0.5px solid green;
+    }
+
+    .cart-total{
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+
+    }
+
+    .cart-total p{
+        color: green;
+        font-weight: 700;
+    }
+
+    .cart-total span{
+        color: green;
+        font-weight: 700;
+        font-size: 18px;
+    }
+
+
+    
+    #cart-toggle:checked + .cart{
+        display: flex;
+    }
+    
+    #cart-toggle{
+        display: none;
+    }
+
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+    .container img{
+        margin: 0;
+        padding: 0px 50px;
+        width: 205px;
+        height: 105px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        transition: all 0.3s;
+    }
+
+    .logo:hover{
+        transform:scale(1.2)
+    }
+
+    #nuestros-servicios .servicios {
+        display: flex;
+        justify-content: center;
+    }
+
+    #nuestros-servicios p{
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    #nuestros-servicios h3{
+        margin-top: 0;
+    }
+    
+    #nuestros-servicios .carta{
+        padding: 50px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: rgb(50, 50, 50);
+        box-shadow: 2px 2px 10px rgba(0,0,0,);
+    }
+
+    #beneficios{
+        background-image: url(assets/MUNDO_REAL-transformed.png) ;
+        background-repeat: no-repeat;
+        background-size: 500px 280px;
+        background-position: calc(100vw - 700px) 120px;
+    }
+
+    #beneficios .container{
+        text-align: initial;
+    }
+
+    #caracteristicas{
+        margin-left: 100px;
+    }
+
+    .contact-wrapper{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .contact-wrapper > * {
+        padding: 2em;
+    }
+
+    .contact-info h4,
+    .contact-info ul,
+    .contact-info p {
+        padding: 1em;
+        text-align: left;
+
+    }
+}
+
+@media (min-width: 1200px) {
+    #carecteristicas{
+        background-position-x:(100vw - 800px) ;
+    }
+}
+
+
+
+
+
